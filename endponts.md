@@ -1,31 +1,6 @@
 # HOTS Hero End Points
 Base URL: `http://hotsapi.net/api/v1`
 
-## Notes:
-**Abilities:**
-
-Abilities are named based on the default hotkeys.
-```javascript
-Q, W, E, R, Z, D
-```
-
-They are then subdivided by appending a number to the end to distinguish between different states of the ability. For example, Abathur's Symbiote then has specific abilities once a target has been selected.
-
-```javascript
-"name": "Q1",
-"title": "Symbiote"
-
-"name": "Q2",
-"title": "Stab"
-
-"name": "W2",
-"title": "Spike Burst"
-
-"name": "E1"
-"title": "Carapace",
-```
-Notice there is no `E2`. Abathur has no `E` ability outside of Symbiote, therefore Abathur only has one E ability.
-
 ## All Heroes
 `/heroes`
 
@@ -554,3 +529,28 @@ Returns details of the specified talent
 }
 ```
 </details>
+
+## Notes:
+**Abilities:**
+
+Abilities are named based on the default hotkeys.
+```javascript
+Q, W, E, R, Z, D
+```
+
+They are then subdivided by appending a number to the end to distinguish between different states of the ability. For example, Abathur's Symbiote then has specific abilities once a target has been selected.
+
+```javascript
+"name": "Q1",
+"title": "Symbiote"
+
+"name": "Q2",
+"title": "Stab"
+
+"name": "W2",
+"title": "Spike Burst"
+
+"name": "E1"
+"title": "Carapace",
+```
+Notice there is no `E2`. Abathur has no `E` ability outside of Symbiote, therefore Abathur only has one E ability.
